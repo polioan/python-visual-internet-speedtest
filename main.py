@@ -4,7 +4,7 @@ from graph import Graph
 from speedtestWrapper import SpeedtestWrapper
 
 def drawTextTable(table, left = 0, top = 0, dist = 20, color = (0, 0, 0)):
-	for i in range(len(table)): app.screen.blit(app.font.render(table[i], True, color), (left, top + i * dist))
+  for i in range(len(table)): app.screen.blit(app.font.render(table[i], True, color), (left, top + i * dist))
 
 if __name__ == '__main__':
   app = App()
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 		"Download speed",
 		"Кол-во тестов: " + str(len(graphDownload)),
 		"Средняя скорость: " + "{:.2f}".format(graphDownload.getAverage()),
-    "Общее время работы: " + str(datetime.today() - startTime)
+		"Общее время работы: " + str(datetime.today() - startTime)
 		], 10, 520)
 
     drawTextTable([
